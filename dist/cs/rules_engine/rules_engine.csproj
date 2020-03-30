@@ -7,7 +7,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace></RootNamespace>
     <AssemblyName>rules_engine</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
 	
@@ -50,6 +50,12 @@
   <ItemGroup>
     <Reference Include="System" />
   
+  
+    <Reference Include="UnityEngine">
+       <HintPath>libs/UnityEngine.dll</HintPath>
+    </Reference>
+  
+  
   </ItemGroup>
   <ItemGroup>
 	
@@ -89,6 +95,8 @@
 	
     <Compile Include="src\haxe\ds\Vector.cs"/>
 	
+    <Compile Include="src\vantreeseba\rulesEngine\unity\editor\EngineInspector.cs"/>
+	
     <Compile Include="src\haxe\Constraints.cs"/>
 	
     <Compile Include="src\cs\Flags.cs"/>
@@ -126,6 +134,8 @@
     <Compile Include="src\vantreeseba\rulesEngine\ConditionResult.cs"/>
 	
     <Compile Include="src\haxe\iterators\MapKeyValueIterator.cs"/>
+	
+    <Compile Include="src\vantreeseba\rulesEngine\unity\EngineComponent.cs"/>
 	
     <Compile Include="src\haxe\lang\DceNo.cs"/>
 	

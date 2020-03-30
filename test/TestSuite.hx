@@ -1,10 +1,10 @@
 import massive.munit.TestSuite;
 
-import engine.RuleTest;
 import engine.ConditionResultTest;
+import engine.ConditionTest;
 import engine.EngineTest;
 import engine.RuleResultTest;
-import engine.ConditionTest;
+import engine.RuleTest;
 
 /**
  * Auto generated Test Suite for MassiveUnit.
@@ -16,10 +16,10 @@ class TestSuite extends massive.munit.TestSuite
 	{
 		super();
 
-		add(engine.RuleTest);
 		add(engine.ConditionResultTest);
+		add(engine.ConditionTest);
 		add(engine.EngineTest);
 		add(engine.RuleResultTest);
-		add(engine.ConditionTest);
+		add(engine.RuleTest);
 	}
 }

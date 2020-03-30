@@ -1,23 +1,30 @@
 ## JS
--cp src
-# -D dce=full
--D dce=no
--D js-es=6
+# -cp src
+# # -D dce=full
+# -D dce=no
+# -D js-es=6
 
-# DEFINES / MACROS
---macro include('', true, null, ['src'])
+# # DEFINES / MACROS
+# --macro include('', true, null, ['src'])
 
-# OUTPUT 
--js dist/js/index.js 
+# # OUTPUT 
+# -js dist/js/index.js 
 
---next
+# --next
 
 ## C#
 -cp src
+
 -D dce=no
 -D dll_import
--D no-root
--D dll
+# -D no-root
+# -D dll
+-D net-ver=40
+# -D real-position
+-D no-compilation
+-D unity_std_target=Standard Assets 
+-net-lib libs/UnityEngine.dll
+# -net-lib libs/UnityEditor.dll
 
 # DEFINES / MACROS
 # --macro addGlobalMetadata('*', '@:nativeGen')

@@ -2,3 +2,10 @@ node_modules
 .temp
 report
 build
+libs
+
+## C# Build stuff.
+dist/cs/rules_engine/hxcs_build.txt
+dist/cs/rules_engine/hxcs_build.txt.meta
+dist/cs/rules_engine/rules_engine.csproj
+dist/cs/rules_engine/rules_engine.csproj.meta
