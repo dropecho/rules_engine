@@ -12,7 +12,11 @@ namespace vantreeseba.rulesEngine.unity.editor {
 		public override void OnInspectorGUI() {
 			
 		var myTarget = (vantreeseba.rulesEngine.unity.EngineComponent) target;
+    DrawDefaultInspector();
 		UnityEditor.EditorGUILayout.LabelField("Level", "HI THERE BOIS");
+    if(UnityEngine.GUILayout.Button("Your ButtonText")) {
+      UnityEngine.Debug.Log("you pushed the button");
+    }
   
 		}
 		
